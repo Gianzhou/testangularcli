@@ -10,5 +10,5 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 
 export class PdfReportComponent {
     pdfrc = "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf";
-    pdfsrc: string = "/assets/pdf-test.pdf";
+    pdfsrc: string = "https://github.com/Gianzhou/testangularcli/blob/master/src/app/pdfReport/assets/report.pdf";
 }
