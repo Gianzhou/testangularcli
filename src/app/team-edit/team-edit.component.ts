@@ -28,7 +28,7 @@ export class TeamEditComponent implements OnInit {
 
   private tempId: string;
 
-  constructor(private m: DataManagerService, private router: Router,
+  constructor(private m: DataManagerService, public router: Router,
     private route: ActivatedRoute) {
     this.teamInput = new Teams();
     this.teamInput.Employees = new Array<Employee>(); 

@@ -18,7 +18,7 @@ export class TeamsViewDetailsComponent implements OnInit {
   public team: Teams;
   
 
-  constructor(private m: DataManagerService, private router: Router, private route: ActivatedRoute) { 
+  constructor(private m: DataManagerService, public router: Router, private route: ActivatedRoute) { 
      //This prevents a data binding errors
     this.team = new Teams();
     this.team.TeamLead = new Employee();
