@@ -1,0 +1,25 @@
+<div class="col-md-12">
+  <h1>Team detail - {{team.TeamName}}  </h1>
+  <h3>View this team</h3>
+</div>
+<dl class="dl-horizontal">
+
+
+  <dt>Team name </dt>
+  <dd>{{team.TeamName}}</dd>
+  <dt>Name of the team leader </dt>
+  <dd>{{team.TeamLead.FirstName}} {{team.TeamLead.LastName}}</dd>
+  
+  <dt>Projects ({{team?.Projects?.length}}) </dt>
+  <!-- <span *ngFor='let t of teams'> -->
+  <dd *ngFor='let project of team?.Projects'>{{project?.ProjectName}} </dd>
+  <!-- </span> -->
+  
+  
+  <dt>Team members ({{team?.Employees?.length}})</dt>
+  <dd *ngFor='let employee of team?.Employees'> {{employee?.FirstName}} {{employee?.LastName}}</dd>
+
+
+</dl>
+<button class="btn btn-default" (click)='this.router.navigate(["/teamsList"])'>Back to list</button>
+<button class="btn btn-default" (click)='this.router.navigate(["/teamEdit", team._id])'>Edit team</button>
