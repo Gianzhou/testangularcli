@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 
 @Component({
     selector: 'my-report',
@@ -9,5 +10,5 @@ import { Component } from '@angular/core';
 
 export class PdfReportComponent {
     pdfrc = "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf";
-    pdfsrc : string = "/assets/report.pdf";
+    pdfsrc: string = "/assets/pdf-test.pdf";
 }
