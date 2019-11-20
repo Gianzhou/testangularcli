@@ -11,7 +11,7 @@ import {Employee, Project, Positions, Teams} from "../all-data";
 })
 export class TeamsListComponent implements OnInit {
 
-  private teams: Teams[];
+  public teams: Teams[];
 
   constructor(private m: DataManagerService, private router: Router) { 
     this.teams = [];

@@ -15,7 +15,7 @@ import {Project, Positions, Employee, Teams} from "../all-data";
 export class TeamsViewDetailsComponent implements OnInit {
 
   private tempId: string;
-  private team: Teams;
+  public team: Teams;
   
 
   constructor(private m: DataManagerService, private router: Router, private route: ActivatedRoute) { 
