@@ -11,12 +11,18 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { VideoComponent } from './video/video.component';
 import { PdfReportComponent } from './pdfReport/report.component';
+import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     VideoComponent,
-    PdfReportComponent
+    PdfReportComponent,
+    NavbarComponent,
+    HomeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

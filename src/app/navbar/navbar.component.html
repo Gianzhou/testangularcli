@@ -1,0 +1,33 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+      <div class="navbar-header">
+          <!-- This is the hamburger button -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+              aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a routerLink='/home' class="navbar-brand">Teams editor</a>
+      </div>
+      <!-- Menu items -->
+      <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+              <li>
+                  <a routerLink='/teamsList' routerLinkActive='active'>Team list</a>
+              </li>
+              <li>
+                  <a routerLink='/teamCreate' routerLinkActive='active'>Create team</a>
+              </li>
+              <li>
+                  <a routerLink='/userAccountCreate' routerLinkActive='active'>Create user account</a>
+              </li>
+              <li>
+                <a routerLink='/userLogin' routerLinkActive='active'>Login</a>
+            </li>
+              <!-- Add other menu items here -->
+          </ul>
+      </div>
+  </div>
+</nav>
