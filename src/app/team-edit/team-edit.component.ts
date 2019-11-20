@@ -12,19 +12,19 @@ import { Employee, Project, Positions, Teams } from "../all-data";
 })
 export class TeamEditComponent implements OnInit {
 
-  private team: Teams[];
+  public team: Teams[];
   //gets sent to web service full of data
-  private teamInput: Teams;
+  public teamInput: Teams;
   //property to hold selected team lead 
-  private selectedTeamLead: string;
+  public selectedTeamLead: string;
   //property to hold an array of all Employee objects
-  private employee: Employee[];
+  public employee: Employee[];
   //property to hold all selected “team members”
-  private selectedTeamMembers: string[];
+  public selectedTeamMembers: string[];
   //property to hold an array of Project objects
-  private project: Project[];
+  public project: Project[];
   //property to hold all selected “team projects
-  private selectedTeamProjects: string[];
+  public selectedTeamProjects: string[];
 
   private tempId: string;
 
