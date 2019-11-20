@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
-import { NgxExtenedPdfViewerModule } from 'ngx-extended-pdf-viewer';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 import { EmbedVideo } from 'ngx-embed-video';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -23,6 +23,7 @@ import { PdfReportComponent } from './pdfReport/report.component';
     AppRoutingModule,
     HttpClientModule,
     PdfViewerModule,
+    NgxExtendedPdfViewerModule,
     EmbedVideo.forRoot()
   ],
   providers: [],
